@@ -1,0 +1,18 @@
+@use "./_variables.scss" as *;
+@use "./_mixins.scss" as *;
+
+@font-face {
+  font-family: 'TT Commons';
+  src: url('~/assets/fonts/TTCommons-Light.woff2') format('woff2');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $main-font;
+  color: $black-color;
+}
