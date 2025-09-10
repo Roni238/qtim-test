@@ -3,16 +3,27 @@
 
 @font-face {
   font-family: 'TT Commons';
-  src: url('~/assets/fonts/TTCommons-Light.woff2') format('woff2');
+  src: url('~/assets/fonts/TTCommons-Regular.woff2') format('woff2');
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: $main-font;
+  line-height: 100%;
 }
 
 body {
-  font-family: $main-font;
   color: $black-color;
+}
+
+a{
+  text-decoration: none;
+  color: $black-color;
+}
+
+h1{
+  font-size: 84px;
+  font-weight: 400;
 }
