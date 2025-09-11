@@ -1,10 +1,13 @@
 <template>
     <header class="header">
-        <LogoIcon class="header__logo"/>
+        <NuxtLink to="/" class="header__logo">
+            <LogoIcon/>
+        </NuxtLink>
+        
 
         <nav class="header__nav">
-            <a class="header__nav-link" href="/">Works</a>
-            <a class="header__nav-link" href="/">About</a>
+            <NuxtLink class="header__nav-link" to="/">Works</NuxtLink>
+            <NuxtLink class="header__nav-link" to="/">About</NuxtLink>
         </nav>
 
         <button class="header__lang-btn" aria-label="Switch language">
@@ -17,12 +20,20 @@
 
 <style lang="scss" scoped>
     .header{
+        background: $white-color;
+        position: sticky;
+        top: 0;
+        z-index: 100;
         font-size: 20px;
         width: 100%;
         padding-inline: 40px;
         height: 121px;
         display: flex;
         align-items: center;
+
+        @media(max-width: 1216px){
+            padding-inline: 20px;
+        }
 
         &__logo{
             margin-right: auto;

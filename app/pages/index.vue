@@ -33,8 +33,8 @@ const {
           width="280"
           height="280"
           loading="lazy"/>
-        <h3 class="article__title">{{ post.title }}</h3>
-        <nuxt-link class="article__link" :to="`/article/${post.id}`">Read more</nuxt-link>
+        <h3 class="article__title">{{ post.preview }}</h3>
+        <NuxtLink class="article__link" :to="`/article/${post.id}`">Read more</NuxtLink>
       </article>
     </div>
 
@@ -54,7 +54,6 @@ const {
 </template>
 
 <style lang="scss" scoped>
-
   .articles{
     margin-bottom: 140px;
     @include container;
@@ -94,6 +93,11 @@ const {
       font-weight: 400;
       font-size: 20px;
       transition: transform 0.2s ease;
+      display: -webkit-box;
+      line-clamp: 3;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
 
     &__link{
@@ -121,7 +125,6 @@ const {
       background-color: $gray-1-color;
       color: $black-color;
       font-size: 16px;
-      cursor: pointer;
 
       &:hover:not(&--active){
         background-color: #E8E8E8;
@@ -134,7 +137,6 @@ const {
     }
 
     &__next-btn{
-      cursor: pointer;
       background: none;
       height: 44px;
       width: 44px;

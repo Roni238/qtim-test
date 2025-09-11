@@ -23,7 +23,17 @@ a{
   color: $black-color;
 }
 
+button{
+  cursor: pointer;
+}
+
 h1{
   font-size: 84px;
   font-weight: 400;
+}
+
+h4{
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 124%;
 }
