@@ -1,8 +1,3 @@
-<script setup lant="ts">
-
-
-</script>
-
 <template>
     <header class="header">
         <LogoIcon class="header__logo"/>
@@ -19,7 +14,6 @@
         <button class="header__cta-btn">Let’s work</button>
     </header>
 </template>
-
 
 <style lang="scss" scoped>
     .header{

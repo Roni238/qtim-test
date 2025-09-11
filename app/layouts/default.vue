@@ -9,6 +9,6 @@
 
 <style lang="scss" soped>
 .main{
-  margin-top: 120px
+  margin-top: 120px;
 }
 </style>
