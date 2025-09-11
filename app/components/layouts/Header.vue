@@ -1,7 +1,7 @@
 <template>
     <header class="header">
         <NuxtLink to="/" class="header__logo">
-            <LogoIcon/>
+            <IconsLogo/>
         </NuxtLink>
         
 
@@ -11,7 +11,7 @@
         </nav>
 
         <button class="header__lang-btn" aria-label="Switch language">
-            <EnLangIcon/>
+            <IconsEnLang/>
         </button>
 
         <button class="header__cta-btn">Let’s work</button>

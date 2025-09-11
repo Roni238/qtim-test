@@ -20,10 +20,10 @@ const {
 </script>
 
 <template>
-  <section class="articles">
-    <h1>Articles</h1>
+  <section class="articles" aria-labelledby="articles-heading">
+    <h1 id="articles-heading">Articles</h1>
     <div class="articles__grid">
-      <article class="article" v-for="post in paginatedPosts" :key="post.id">
+      <article class="article" v-for="post in paginatedPosts" :key="post.id" :title="post.title">
         <NuxtImg 
           class="article__image" 
           :src="post.image" 
@@ -34,7 +34,7 @@ const {
           height="280"
           loading="lazy"/>
         <h3 class="article__title">{{ post.preview }}</h3>
-        <NuxtLink class="article__link" :to="`/article/${post.id}`">Read more</NuxtLink>
+        <NuxtLink class="article__link" :to="`/article/${post.id}`" :aria-label="`Read more about ${post.title}`">Read more</NuxtLink>
       </article>
     </div>
 
@@ -46,8 +46,8 @@ const {
         {{ pageNumber }}
       </button>
 
-      <button class="pagination__next-btn" @click="nextPage">
-        <ArrayIcon/>
+      <button class="pagination__next-btn" @click="nextPage" aria-label="Next articles">
+        <IconsArrow aria-hidden="true"/>
       </button>
     </div>
   </section>

@@ -1,10 +1,10 @@
 <template>
   <div>
-    <Header />
+    <LayoutsHeader />
     <main class="main">
       <slot /> 
     </main>
-    <Footer/>
+    <LazyLayoutsFooter/>
   </div>
 </template>
 

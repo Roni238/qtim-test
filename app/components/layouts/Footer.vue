@@ -18,7 +18,7 @@
                     <p>Office in Russia</p>
                     <address>139 Ruben Station Lake Drew, NM 52678</address>
                     <a href="https://t.me/s/qtim_pro">
-                        <TgIcon/>
+                        <IconsTg/>
                     </a>
                 </li>
                 
@@ -26,7 +26,7 @@
                     <p>Office in Dubai</p>
                     <address>139 Ruben Station Lake Drew, NM 52678</address>
                     <a href="https://t.me/s/qtim_pro">
-                        <TgIcon/>
+                        <IconsTg/>
                     </a>
                 </li>
             </ul>
@@ -134,7 +134,7 @@
             transform: translateX(-50%);
             font-size: 32px;
             transition: transform 0.2s ease;
-            
+
             &:hover{
                 transform: translateX(-50%) scale(1.2);
             }
