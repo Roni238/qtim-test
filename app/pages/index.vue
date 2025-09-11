@@ -69,15 +69,14 @@ const {
 
   .article{
     cursor: pointer;
+    max-height: 396px;
+    transition: transform 0.2s ease;
 
     &:hover{
-      .article{
-        &__link{
-          opacity: 1;
-        }
-        &__image, &__title{
-          transform: translateY(-20px); 
-        }
+      transform: translateY(-20px);
+
+      .article__link{
+        opacity: 1;
       }
     }
     
@@ -85,7 +84,7 @@ const {
       height: 280px;
       width: 280px;
       object-fit: cover;
-      transition: transform 0.2s ease;
+      margin-bottom: 24px;
     }
 
     &__title{
@@ -104,7 +103,7 @@ const {
       font-size: 20px;
       color: $pink-color;
       opacity: 0;
-      transition: opacity 0.2s ease;
+      margin-top: 12px;
     }
     
     &__pagination{

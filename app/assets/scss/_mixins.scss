@@ -1,5 +1,5 @@
 @mixin container{
-  margin: auto;
+  margin-inline: auto;
   max-width: 1217px;
 
   @media(max-width: 1216px){

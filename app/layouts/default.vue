@@ -4,11 +4,12 @@
     <main class="main">
       <slot /> 
     </main>
+    <Footer/>
   </div>
 </template>
 
 <style lang="scss" soped>
 .main{
-  margin-top: 120px;
+  margin-block: 120px 80px;
 }
 </style>
